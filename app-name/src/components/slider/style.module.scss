@@ -1,0 +1,40 @@
+.sliderInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 100%;
+  height: 100%;
+  padding: 0 76px 104px 76px;
+}
+
+.year {
+    font-size: 25px;
+    font-weight: 400;
+    color: #3877EE;
+
+}
+.event {
+  font-weight: 400;
+  font-size: 20px;
+  color: #42567a;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 568px) {
+  .sliderInner  {
+    padding: 0 20px;
+    max-width: 100%;
+  }
+  .year  {
+    font-size: 18px;
+  }
+  .event {
+    font-size: 16px;
+  }
+  .swiper-slide  {
+    width: auto;
+  }
+
+  
+}

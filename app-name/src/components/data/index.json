@@ -1,0 +1,182 @@
+[
+  {
+    "id": 0,
+    "number": 1,
+    "FromYear": "1987",
+    "toYear": "1995",
+    "type": "it",
+    "sliderTopics": [
+      {
+        "id": 0,
+        "slideryear": "1987",
+        "event": "событие для вкладки 1"
+      },
+      {
+        "id": 0,
+        "slideryear": "1989",
+        "event": "событие для вкладки 1"
+      },
+      {
+        "id": 0,
+        "slideryear": "1992",
+        "event": "событие для вкладки 1"
+      },
+      {
+        "id": 0,
+        "slideryear": "1994",
+        "event": "событие для вкладки 1"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "number": 2,
+    "FromYear": "2005",
+    "toYear": "2012",
+    "type": "журналистика",
+    "sliderTopics": [
+      
+        {
+          "id": 1,
+          "slideryear": "2005",
+          "event": "событие для вкладки 2"
+        },
+        {
+          "id": 1,
+          "slideryear": "2007",
+          "event": "событие для вкладки 2"
+        },
+        {
+          "id": 1,
+          "slideryear": "2010",
+          "event": "событие для вкладки 2"
+        },
+        {
+          "id": 1,
+          "slideryear": "2012",
+          "event": "событие для вкладки 2"
+        }
+      
+    ]
+  },
+  {
+    "id": 2,
+    "number": 3,
+    "FromYear": "2010",
+    "toYear": "2016",
+    "type": "литература",
+    "sliderTopics": [
+      
+        {
+          "id": 2,
+          "slideryear": "2010",
+          "event": "событие для вкладки 3"
+        },
+        {
+          "id": 2,
+          "slideryear": "2011",
+          "event": "событие для вкладки 3"
+        },
+        {
+          "id": 2,
+          "slideryear": "2012",
+          "event": "событие для вкладки 3"
+        },
+        {
+          "id": 2,
+          "slideryear": "2015",
+          "event": "событие для вкладки 3"
+        }
+      
+    ]
+  },
+  {
+    "id": 3,
+    "number": 4,
+    "FromYear": "2007",
+    "toYear": "2010",
+    "type": "",
+    "sliderTopics": [
+      
+        {
+          "id": 3,
+          "slideryear": "2007",
+          "event": "событие для вкладки 4"
+        },
+        {
+          "id": 3,
+          "slideryear": "2008",
+          "event": "событие для вкладки 4"
+        },
+        {
+          "id": 3,
+          "slideryear": "2009",
+          "event": "событие для вкладки 4"
+        },
+        {
+          "id": 3,
+          "slideryear": "2010",
+          "event": "событие для вкладки 4"
+        }
+      
+    ]
+  },
+  {
+    "id": 4,
+    "number": 5,
+    "FromYear": "2007",
+    "toYear": "2016",
+    "type": "наука",
+    "sliderTopics": [
+      {
+        "id": 4,
+        "slideryear": "2007",
+        "event": "событие для вкладки 5"
+      },
+      {
+        "id": 4,
+        "slideryear": "2010",
+        "event": "событие для вкладки 5"
+      },
+      {
+        "id": 4,
+        "slideryear": "2012",
+        "event": "событие для вкладки 5"
+      },
+      {
+        "id": 4,
+        "slideryear": "2016",
+        "event": "событие для вкладки 5"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "number": 6,
+    "FromYear": "2010",
+    "toYear": "2016",
+    "type": "кино",
+    "sliderTopics": [
+      {
+        "id": 5,
+        "slideryear": "2011",
+        "event": "событие для вкладки 6"
+      },
+      {
+        "id": 5,
+        "slideryear": "2013",
+        "event": "событие для вкладки 6"
+      },
+      {
+        "id": 5,
+        "slideryear": "2015",
+        "event": "событие для вкладки 6"
+      },
+      {
+        "id": 5,
+        "slideryear": "2016",
+        "event": "событие для вкладки 6"
+      }
+    ]
+  }
+]

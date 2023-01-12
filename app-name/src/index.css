@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+
+  background: #e5e5e5; 
+}
+
+.container {
+  max-width: 1440px;
+  position: relative;
+  margin: auto;
+}
+
+.container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #42567a;
+  opacity: 0.1;
+  width: 1px;
+  height: 100%;
+}
+
+.container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #42567a;
+  opacity: 0.1;
+  width: 1px;
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-top: 56px;
+}
+.swiper-button-disabled {
+  display: none !important;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px !important;
+  height: 40px !important;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(56, 119, 238, 0.1);
+  border: 2px solid #3877ee;
+  border-radius: 50%;
+  left: 0;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 12px !important;
+  width: 5px;
+  height: 10px;
+  color: #3877ee !important;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+
+}
+
+@media screen and (max-width: 568px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important ;
+  }
+  .swiper-pagination{
+    position: absolute !important;
+    bottom: 0 !important;
+  }
+}
