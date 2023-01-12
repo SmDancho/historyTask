@@ -26,9 +26,6 @@ export const Circle: FC = () => {
     }
   }; // выбрать предидущий элемент по кругу
 
-  const animate = () => {
-    gsap.to(style.circel, { rotation: 360, x: 10 });
-  };
   return (
     <>
       <div className="container">
@@ -53,7 +50,6 @@ export const Circle: FC = () => {
                     <li
                       onClick={() => {
                         setIndex(index);
-                        animate();
                       }}
                       className={`${style.point} ${
                         index === Stateindex ? style.active : ""
