@@ -33,8 +33,8 @@ export const Slider: FC<dataType> = (props) => {
               },
             }}
           >
-            {sliderTopics.map((item: sliderTypes) => (
-              <SwiperSlide>
+            {sliderTopics.map((item: sliderTypes,index) => (
+              <SwiperSlide key={index}>
                 <div className={style.year}>{item.slideryear}</div>
                 <div className={style.event}>{item.event}</div>
               </SwiperSlide>

@@ -1,5 +1,5 @@
 import style from "./style.module.scss";
-
+import { gsap } from "gsap";
 import { dataType } from "../types/data";
 import { FC } from "react";
 
@@ -25,7 +25,10 @@ export const Circle: FC = () => {
       setIndex(5);
     }
   }; // выбрать предидущий элемент по кругу
-  console.log(360 / (6 * Stateindex));
+
+  const animate = () => {
+    gsap.to(style.circel, { rotation: 360, x: 10 });
+  };
   return (
     <>
       <div className="container">
@@ -34,7 +37,7 @@ export const Circle: FC = () => {
             {data
               .filter((item: dataType) => item.id === Stateindex)
               .map((year: dataType) => (
-                <h1 className={style.circleTitle}>
+                <h1 className={style.circleTitle} key={year.id}>
                   {year.FromYear} <span>{year.toYear}</span>
                 </h1>
               ))}
@@ -45,29 +48,30 @@ export const Circle: FC = () => {
               // }}
             >
               {data.map((item: dataType, index: number) => (
-                <div>
+                <div key={item.id}>
                   <ul>
-                    
                     <li
                       onClick={() => {
                         setIndex(index);
+                        animate();
                       }}
-                      key={item.id}
                       className={`${style.point} ${
                         index === Stateindex ? style.active : ""
                       }`}
                       style={{
-
-                        transform: `rotate(calc(   360deg  / ${data.length}    * ${index}    ))`, // размещение элементов по кругу
+                        transform: `rotate(calc(   360deg  / ${data.length}    * ${index}   ))`, // размещение элементов по кругу
                       }}
                     >
-
                       {index === Stateindex && (
-                      <div className={style.type}
-                      style={{
-                        transform: `rotate(calc(360deg / -${data.length}  * ${index} - 90deg ))`, //  что бы выровнить тип таба ровно  
-                      }}>{item.type}</div>
-                    )}
+                        <div
+                          className={style.type}
+                          style={{
+                            transform: `rotate(calc(360deg / -${data.length}  * ${index} - 90deg ))`, //  что бы выровнить тему таба ровно
+                          }}
+                        >
+                          {item.type}
+                        </div>
+                      )}
 
                       <span
                         style={{
@@ -134,7 +138,7 @@ export const Circle: FC = () => {
         {data
           .filter((item: dataType) => item.id === Stateindex)
           .map((data: dataType) => (
-            <Slider {...data} />
+            <Slider key={data.id} {...data} />
           ))}
 
         <div className={style.controllersMobile}>
@@ -187,7 +191,7 @@ export const Circle: FC = () => {
           </div>
           <div className={style.pagintaiion}>
             {[...new Array(data.length)].map((_, index) => (
-              <ul>
+              <ul key={index}>
                 <li
                   className={`${style.paginatePoint} ${
                     index === Stateindex ? style.activePaginate : ""
